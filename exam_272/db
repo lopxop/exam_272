@@ -1,0 +1,17 @@
+CREATE DATABASE library_db;
+
+USE library_db;
+
+CREATE TABLE books (
+    bookid INT(11) AUTO_INCREMENT PRIMARY KEY,
+    authorid INT(11),
+    title VARCHAR(55) NOT NULL,
+    ISBN VARCHAR(25) NOT NULL,
+    pub_year SMALLINT(6) NOT NULL,
+    available TINYINT(4) NOT NULL
+);
+
+INSERT INTO books (bookid, authorid, tilte, ISBN, pub_year, available) VALUES
+(1, John, 'ABC', 10, 1986, 5 ),
+(2, Mike, 'DEF', 12, 1992, 3 ),
+(3, Ethan, 'XYZ', 8, 1996, 4 ),
